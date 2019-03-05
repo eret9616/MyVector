@@ -10,7 +10,7 @@ using namespace std;
 // 1 该数组能够存放int,double 还有自定义类型
 // 2 重载[]操作符: array[i] = ??? ; array[i]
 // 3 重载<<操作符: cout << array
-// 4 重载拷贝构造函数: array1 = array2 // 等号操作符
+// 4 重载拷贝构造函数: array1 = array2 // 初始化时进行赋值调用的是拷贝构造函数
 // 5 重载拷贝构造函数: array1(array2) // 拷贝构造函数
 // 6 重载等号操作符: array[i] = array[j]
 
