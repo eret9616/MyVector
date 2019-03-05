@@ -20,11 +20,13 @@ class MyVector
 {
 public:
 
+	// 注意这里必须要加friend 本质相当于在这里声明 然后再外面定义的传统写法，只是把声明和定义放到一起写了，
+	// 不要和 操作符重载(成员函数) 弄混，因为成员函数的操作符重载
 	friend ostream & operator << (ostream &os, MyVector<T> &v)
 	{
 		for (int i = 0; i < v.len; i++)
 		{
-			cout << v[i] << " ";
+			os << v[i] << " ";
 		}
 		return os;
 	}
