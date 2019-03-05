@@ -21,7 +21,7 @@ class MyVector
 public:
 
 	// 注意这里必须要加friend 本质相当于在这里声明 然后再外面定义的传统写法，只是把声明和定义放到一起写了，
-	// 不要和 操作符重载(成员函数) 弄混，因为成员函数的操作符重载
+	// 不要和 操作符重载(成员函数) 弄混， 如果去掉friend 会被编译器认为是操作符重载(成员函数) 双目运算符应当只传一个参数
 	friend ostream & operator << (ostream &os, MyVector<T> &v)
 	{
 		for (int i = 0; i < v.len; i++)
