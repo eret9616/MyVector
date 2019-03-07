@@ -54,7 +54,7 @@ public:
 
 private:
 	// 数组长度
-	T len;
+	int len;
 	// 内存空间地址
 	T * space;
 };
