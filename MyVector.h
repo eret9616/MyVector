@@ -92,6 +92,7 @@ MyVector<T>::MyVector(int num)
 	len = num;
 	// 在堆上连续开辟sizeof(T)*num大小的空间
 	this->space = new T[num];
+	memset(this->space,0,sizeof(T)*num);
 }
 
 // 实现等号操作符重载
